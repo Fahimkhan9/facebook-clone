@@ -3,14 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {BrowserRouter}  from 'react-router-dom'
-import 'bootstrap/dist/css/bootstrap.min.css'
+
+import { StateProvider } from './StateProvider';
+import reducer,{initialState} from './reducer'
 
 ReactDOM.render(
-  <BrowserRouter>
+  <StateProvider  initialState={initialState}  reducer={reducer}   >
     <App />
 
-  </BrowserRouter>
+  </StateProvider>
+
+
 ,
   document.getElementById('root')
 );

@@ -30,6 +30,8 @@
  .messagesender__top form button{
      display: none;
  }
+
+
  .messagesender__input{
      flex: 1;
  }
@@ -55,3 +57,11 @@ cursor: pointer;
      background-color: #eff2f5;
      border-radius: 20px;
  }
+
+
+
+ /* @media (max-width: 700px){
+     .messagesender__top form button{
+         display: inline;
+     }
+ } */

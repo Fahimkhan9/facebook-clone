@@ -1,5 +1,5 @@
-export const  userloggedin = {
-    user: null
+export const  initialState = {
+    user: null,
 }
 
 
@@ -13,10 +13,10 @@ switch(action.type){
     case actionTypes.SET_USER:
        return  {
 ...state,
-user: action.user
+user: action.user,
     }
     default:
-        return state
+        return state;
 }
 }
 
